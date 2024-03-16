@@ -3,14 +3,16 @@ import { buildConfig } from 'payload/config'
 import { webpackBundler } from '@payloadcms/bundler-webpack'
 import { slateEditor } from '@payloadcms/richtext-slate'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { Users } from './collections/Users'
 
 export default buildConfig({
   serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
-  collections: [],
+  collections: [Users],
   routes: {
     admin: '/admin',
   },
   admin: {
+    user: 'users',
     bundler: webpackBundler(),
     meta: {
       titleSuffix: '- DigitalHola',
