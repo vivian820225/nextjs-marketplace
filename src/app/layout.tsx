@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import './globals.css'
+import { Toaster } from 'sonner'
 import Navbar from '@/components/Navbar'
 import Providers from '@/components/Providers'
 
@@ -28,6 +29,8 @@ export default function RootLayout({
             <div className="flex-grow flex-1">{children}</div>
           </Providers>
         </main>
+
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   )
