@@ -33,7 +33,7 @@ export const Products: CollectionConfig = {
       name: 'price',
       label: 'Price in TWD',
       min: 0,
-      max: 1000,
+      max: 10000,
       type: 'number',
       required: true,
     },
