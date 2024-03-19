@@ -52,7 +52,7 @@ const Page = () => {
       }
 
       if (isSeller) {
-        router.push('/admin')
+        router.push('/dashboard')
         return
       }
 
