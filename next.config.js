@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  generateBuildId: async () => {
+    return new Date().getTime().toString()
+  },
   images: {
     remotePatterns: [
       {
@@ -14,4 +17,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+module.exports = nextConfig
