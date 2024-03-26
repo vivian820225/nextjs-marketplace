@@ -14,7 +14,7 @@ export const Orders: CollectionConfig = {
   slug: 'orders',
   admin: {
     useAsTitle: 'Your Orders',
-    description: 'A summary of all your orders on DigitalHola.',
+    description: 'A summary of all your orders on FoxTrove.',
   },
   access: {
     read: yourOwn,
