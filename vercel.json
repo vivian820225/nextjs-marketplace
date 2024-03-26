@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api(.*)",
-      "dest": "/api"
+      "source": "/api/trpc",
+      "destination": "/api/trpc"
+    },
+    {
+      "source": "/:path((?!api).*)",
+      "destination": "/"
     }
   ]
 }
