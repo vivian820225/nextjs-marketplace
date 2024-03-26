@@ -11,7 +11,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'nextjs-marketplace-rho.vercel.app',
+        hostname: process.env.NEXT_PUBLIC_SERVER_URL,
       },
     ],
   },
