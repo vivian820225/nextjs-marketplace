@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: process.env.NEXT_PUBLIC_SERVER_URL,
+        hostname: 'foxtrove.onrender.com',
       },
     ],
   },
